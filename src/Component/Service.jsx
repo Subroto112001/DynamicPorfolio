@@ -4,7 +4,8 @@ import { MdOutlineWeb, MdTabletAndroid } from "react-icons/md";
 
 import { SiTaichigraphics } from "react-icons/si";
 import { Link } from "react-router-dom";
-
+import Vector from "../assets/Vector.png";
+import Vector2 from "../assets/Vector2.png";
 const Service = () => {
   const serviceItem = [
     {
@@ -54,7 +55,7 @@ const Service = () => {
           </div>
           <div className="mt-10 flex flex-wrap gap-20 justify-center items-center">
             {serviceItem.map((item) => (
-              <div className="w-[350px] h-[300px] bg-[#1B1B1B] flex flex-col items-center justify-center hover:scale-105 group  transition-all duration-500">
+              <div className="w-[350px] h-[300px] bg-[#1B1B1B] flex flex-col items-center justify-center hover:scale-105 group  transition-all duration-500 relative">
                 <div className="flex flex-col gap-3 items-center justify-center">
                   <span className="text-[#fd6f00] text-[48px]">
                     {item.icon}
@@ -65,6 +66,12 @@ const Service = () => {
                   <p className="text-[18px] font-medium text-707070 px-[30px] text-center">
                     {item.desc}
                   </p>
+                </div>
+                <div className="absolute top-4 left-3">
+                  <img width={70} src={Vector} alt="" />
+                </div>
+                <div className="absolute top-15 left-2.5">
+                  <img width={23} src={Vector2} alt="" />
                 </div>
               </div>
             ))}
