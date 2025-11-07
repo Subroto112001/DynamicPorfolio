@@ -5,8 +5,8 @@ import {
   FaInstagramSquare,
   FaTwitter,
 } from "react-icons/fa";
-import shadow1 from "../assets/shadow1.png";
-import profile from "../assets/profile.png";
+import shadow1 from "../assets/Shadow1.png";
+import profile from "../assets/Profile.png";
 const SelfPresentation = () => {
   const iconItem = [
     {

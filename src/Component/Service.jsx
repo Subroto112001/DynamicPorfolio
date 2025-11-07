@@ -1,7 +1,7 @@
 import React from "react";
 import { FaApple, FaAppStoreIos } from "react-icons/fa";
 import { MdOutlineWeb, MdTabletAndroid } from "react-icons/md";
-import { PiGraphicsCardLight } from "react-icons/pi";
+
 import { SiTaichigraphics } from "react-icons/si";
 import { Link } from "react-router-dom";
 
