@@ -4,6 +4,9 @@ import Banner from '../Component/Banner'
 import SelfPresentation from '../Component/SelfPresentation'
 import Service from '../Component/Service'
 import Project from '../Component/Project'
+import Testimonial from '../Component/Testimonial'
+import DesignProcess from '../Component/DesignProcess'
+import Contact from '../Component/Contact'
 
 const Home = () => {
   return (
@@ -12,7 +15,10 @@ const Home = () => {
       <Banner />
       <SelfPresentation />
       <Service />
-      <Project/>
+      <Project />
+      <DesignProcess/>
+      <Testimonial />
+      <Contact/>
     </div>
   );
 }
