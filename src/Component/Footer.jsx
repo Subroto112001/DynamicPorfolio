@@ -48,7 +48,7 @@ const Footer = () => {
   return (
     <div className="bg-[#1B1B1B]">
       <div className="container">
-        <div className="py-[100px]">
+        <div className="py-[50px]">
           <h3 className="text-[#fd6f00] font-bold text-[30px] text-center">
             LOGO
           </h3>
