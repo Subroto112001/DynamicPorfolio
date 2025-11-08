@@ -24,21 +24,21 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full p-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none"
+                className="w-full p-3 rounded-md bg-FFFFFF border border-gray-700 focus:outline-none"
               />
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full p-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none"
+                className="w-full p-3 rounded-md bg-FFFFFF border border-gray-700 focus:outline-none"
               />
               <textarea
                 placeholder="Your Message"
                 rows="5"
-                className="w-full p-3 rounded-md bg-gray-800 border border-gray-700 focus:outline-none"
+                className="w-full p-3 rounded-md bg-FFFFFF border border-gray-700 focus:outline-none"
               ></textarea>
               <button
                 type="submit"
-                className="w-full py-3 bg-white text-black font-semibold rounded-md hover:bg-gray-200 transition"
+                className="w-full py-3 bg-[#fd6f00] text-white font-semibold rounded-md border-2 border-[#fd6f00] hover:bg-white hover:text-[#fd6f00] transition duration-500 cursor-pointer hover:scale-105"
               >
                 Send Message
               </button>

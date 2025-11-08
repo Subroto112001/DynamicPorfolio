@@ -7,6 +7,7 @@ import Project from '../Component/Project'
 import Testimonial from '../Component/Testimonial'
 import DesignProcess from '../Component/DesignProcess'
 import Contact from '../Component/Contact'
+import Footer from '../Component/Footer'
 
 const Home = () => {
   return (
@@ -18,7 +19,8 @@ const Home = () => {
       <Project />
       <DesignProcess/>
       <Testimonial />
-      <Contact/>
+      <Contact />
+      <Footer/>
     </div>
   );
 }

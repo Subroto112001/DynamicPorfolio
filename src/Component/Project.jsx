@@ -49,13 +49,13 @@ const Project = () => {
             Work
           </h3>
           <div className="flex flex-col">
-            <div className="mt-10 flex justify-between ">
-              <h3 className="text-[38px] text-white font-semibold leading-[58px] hover:scale-105 transition-all duration-500">
+            <div className="mt-10 flex flex-col sm:flex-row justify-between ">
+              <h3 className=" text-[24px] sm:text-[38px] text-white font-semibold sm:leading-[58px] text-center sm:text-start hover:scale-105 transition-all duration-500">
                 Here My Beautiful <br />{" "}
                 <span className="text-[#fd6f00]">Works</span>
               </h3>
-              <div className=" flex gap-5">
-                <button className=" border border-white hover:border-[#fd6f00] text-[#C6C6C6] w-[100px] h-[54px] flex justify-center items-center rounded bg-FFFFFF hover:bg-[#fd6f00] hover:text-white transition-all duration-500 cursor-pointer hover:scale-105 ">
+              <div className=" flex flex-col sm:flex-row gap-5 items-center sm:items-start sm:gap-5 mt-[30px] sm:mt-0">
+                <button className=" border border-white hover:border-[#fd6f00] text-[#C6C6C6] w-[170px] sm:w-[100px] h-[54px] flex justify-center items-center rounded bg-FFFFFF hover:bg-[#fd6f00] hover:text-white transition-all duration-500 cursor-pointer hover:scale-105 ">
                   ALL
                 </button>
 
@@ -63,7 +63,7 @@ const Project = () => {
                   {projectName.map((item) => (
                     <button
                       key={item.id}
-                      className="border border-white hover:border-[#fd6f00] text-[#C6C6C6] w-[210px] flex justify-center items-center h-[54px] rounded bg-FFFFFF hover:bg-[#fd6f00] hover:text-white transition-all duration-500 cursor-pointer hover:scale-105 "
+                      className="border border-white hover:border-[#fd6f00] text-[#C6C6C6] w-[170px] sm:w-[210px] flex justify-center items-center h-[54px] rounded bg-FFFFFF hover:bg-[#fd6f00] hover:text-white transition-all duration-500 cursor-pointer hover:scale-105 "
                     >
                       {item.name}
                     </button>
@@ -72,53 +72,46 @@ const Project = () => {
               </div>
             </div>
             <div className="flex flex-col mt-[100px]">
-             
-               
-                  
-
-                  <div className="flex flex-col gap-10">
-                    {projectItem.map((item) => (
-                      <div
-                        className="flex flex-col relative "
-                        key={item.id}
-                      >
-                        <p className="font-semibold text-[34px] text-white ">
-                          {item.name}
-                        </p>
-                        <div
-                          className={`z-10 flex justify-between items-center ${
-                            item.id % 2 === 0 ? "flex-row-reverse" : "flex-row"
-                          }`}
-                        >
-                          <div className="relative max-w-3xl hover:scale-105 transition-all duration-500">
-                            <div className="backdrop-blur-xl bg-white/10 rounded-md mt-8 p-12 shadow-2xl border border-white/20">
-                              <p className="text-white text-lg leading-relaxed">
-                                {item.desc}
-                              </p>
-                            </div>
-                          </div>
-                          <div>
-                            <img
-                              src={item.image}
-                              alt=""
-                              className="w-[400px] hover:scale-105 transition-all duration-500"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          className={` absolute z-0 ${
-                            item.id % 2 === 0
-                              ? "top-[-50px] left-20"
-                              : "top-[-50px] right-20"
-                          }`}
-                        >
-                          <img className="w-[610px]" src={shadhow1} alt="" />
+              <div className="flex flex-col gap-10">
+                {projectItem.map((item) => (
+                  <div className="flex flex-col relative " key={item.id}>
+                    <p className="font-semibold text-[34px] text-white ">
+                      {item.name}
+                    </p>
+                    <div
+                      className={`z-10 flex  justify-between items-center ${
+                        item.id % 2 === 0
+                          ? " flex-col-reverse sm:flex-row-reverse"
+                          : "flex-col-reverse sm:flex-row"
+                      }`}
+                    >
+                      <div className="relative max-w-3xl sm:hover:scale-105 transition-all duration-500">
+                        <div className="backdrop-blur-xl bg-white/10 rounded-md mt-8 p-12 shadow-2xl border border-white/20">
+                          <p className="text-white text-lg leading-relaxed">
+                            {item.desc}
+                          </p>
                         </div>
                       </div>
-                    ))}
+                      <div>
+                        <img
+                          src={item.image}
+                          alt=""
+                          className="w-[400px] sm:hover:scale-105 transition-all duration-500"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className={` absolute z-0 ${
+                        item.id % 2 === 0
+                          ? "top-[-50px] left-20"
+                          : "top-[-50px] right-20"
+                      }`}
+                    >
+                      <img className="w-[610px]" src={shadhow1} alt="" />
+                    </div>
                   </div>
-               
-
+                ))}
+              </div>
             </div>
           </div>
         </div>

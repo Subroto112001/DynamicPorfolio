@@ -4,14 +4,14 @@ const Testimonial = () => {
   return (
     <div className="bg-[#131212]">
       <div className="container">
-        <div className=" pb-[100px] relative">
-          <div>
-            <h3 className="text-[64px] font-Syne font-bold text-white text-center">
+        <div className="pt-20 sm:pt-0 pb-[100px] relative">
+          <div >
+            <h3 className=" text-[48px] sm:text-[64px] font-Syne font-bold text-white text-center">
               {" "}
               Testimonial
             </h3>
 
-            <p className="max-w-[878px] text-white text-center mx-auto">
+            <p className="max-w-[878px] mt-22 sm:mt-0 text-white text-center mx-auto">
               “Aaronn was fantastic to work with from start to finish. We were
               looking for a simple, stand-out logo and he delivered. I tried
               designing the logo myself thinking I wouldn’t need to pay the
@@ -26,8 +26,8 @@ const Testimonial = () => {
               -John Moris
             </p>
           </div>
-          <div className="absolute top-0 right-0">
-            <img src={quote} alt="" />
+          <div className="absolute top-[180px] sm:top-0 right-0">
+            <img src={quote} alt="" className="w-[100px] sm:w-[170px]"/>
           </div>
         </div>
       </div>
