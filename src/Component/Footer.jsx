@@ -76,7 +76,7 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="flex flex-wrap justify-center items-center mt-10 gap-5 sm:gap-10">
+          <div className="flex flex-wrap justify-center items-center  gap-5 sm:gap-10 py-10 border-b border-959595">
             <p className="flex items-center  gap-3">
               <span className="text-[25px] text-959595">
                 <IoMail />
@@ -92,6 +92,14 @@ const Footer = () => {
               <span className="text-959595 text-[20px] font-bold">
                 +880 123 456 789
               </span>
+            </p>
+          </div>
+
+          <div className="py-5">
+            <p className="text-959595 text-center">
+              Created by &nbsp;<span className="text-[#fd6f00]">Subroto</span>
+              &nbsp;| Powered by{" "}
+              <span className="text-[#fd6f00]">ranocoder Ltd</span>
             </p>
           </div>
         </div>
