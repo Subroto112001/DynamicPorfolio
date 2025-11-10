@@ -4,7 +4,7 @@ const Testimonial = () => {
   return (
     <div className="bg-[#131212]">
       <div className="container">
-        <div className="pt-20 sm:pt-0 pb-[100px] relative">
+        <div className="pt-20 sm:pt-0 pb-[100px] relative px-3 sm:px-0">
           <div >
             <h3 className=" text-[48px] sm:text-[64px] font-Syne font-bold text-white text-center">
               {" "}
@@ -26,8 +26,8 @@ const Testimonial = () => {
               -John Moris
             </p>
           </div>
-          <div className="absolute top-[180px] sm:top-0 right-0">
-            <img src={quote} alt="" className="w-[100px] sm:w-[170px]"/>
+          <div className="absolute top-[170px] sm:top-0  right-3 sm:right-0">
+            <img src={quote} alt="" className="w-[90px] sm:w-[170px]"/>
           </div>
         </div>
       </div>

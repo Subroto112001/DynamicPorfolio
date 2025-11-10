@@ -48,7 +48,7 @@ const Project = () => {
           <h3 className="font-Syne text-[64px] font-bold text-white text-center">
             Work
           </h3>
-          <div className="flex flex-col">
+          <div className="flex flex-col px-3 sm:px-0">
             <div className="mt-10 flex flex-col sm:flex-row justify-between ">
               <h3 className=" text-[24px] sm:text-[38px] text-white font-semibold sm:leading-[58px] text-center sm:text-start hover:scale-105 transition-all duration-500">
                 Here My Beautiful <br />{" "}
@@ -87,7 +87,7 @@ const Project = () => {
                     >
                       <div className="relative max-w-3xl sm:hover:scale-105 transition-all duration-500">
                         <div className="backdrop-blur-xl bg-white/10 rounded-md mt-8 p-12 shadow-2xl border border-white/20">
-                          <p className="text-white text-lg leading-relaxed">
+                          <p className="text-white  text-lg leading-relaxed">
                             {item.desc}
                           </p>
                         </div>

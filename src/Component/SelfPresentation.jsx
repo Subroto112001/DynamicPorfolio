@@ -29,21 +29,24 @@ const SelfPresentation = () => {
   return (
     <div className="bg-[#131212]">
       <div className="container">
-        <div className="py-[100px] relative">
-          <div className=" flex items-center justify-between relative z-10">
-            <div className="flex flex-col gap-5 ">
-              <h2 className="text-white font-bold text-[56px] font-Syne">
-                Let’s get know <br /> about me closer
+        <div className="py-10 sm:py-[100px] relative">
+          <div className=" flex flex-col-reverse sm:flex-row items-center justify-between relative z-10">
+            <div className="flex flex-col gap-5 px-3">
+              <h2 className="text-white font-bold text-[42px] sm:text-[56px] font-Syne">
+                Let’s get know <br /> about{" "}
+                <span className="text-[#fd6f00]">Me</span>{" "}
+                <br className="sm:hidden" />
+                closer
               </h2>
               <div className="flex flex-col gap-2">
                 <p className="text-707070 font-semibold text-[24px]">Hi I am</p>
                 <p className="font-bold text-[28px] text-959595 ">Jhon Doe</p>
-                <p className="font-black font-Syne text-[48px] text-[#fd6f00] ">
+                <p className="font-black font-Syne text-[38px] sm:text-[48px] text-[#fd6f00] ">
                   UI/UX DESIGNER
                 </p>
               </div>
 
-              <div className="mt-10 flex gap-5">
+              <div className=" mt-5 sm:mt-10 flex gap-5">
                 {iconItem.map((item) => (
                   <span
                     key={item.id}
@@ -53,7 +56,7 @@ const SelfPresentation = () => {
                   </span>
                 ))}
               </div>
-              <div className="flex gap-10 mt-10">
+              <div className="flex gap-10 mt-5 sm:mt-10 ">
                 <button className="w-[156px] h-12 rounded flex items-center justify-center bg-transparent border border-white text-white font-bold text-[20px]  hover:bg-[#fd6f00] hover:border-[#fd6f00] duration-500 cursor-pointer hover:scale-105">
                   Hire Me
                 </button>
@@ -63,8 +66,8 @@ const SelfPresentation = () => {
                 </button>
               </div>
 
-              <div className="bg-FFFFFF px-6 py-[30px] rounded flex gap-[60px] justify-center items-center mt-20 shadow-2xl shadow-[#ffffff15] hover:scale-105 duration-500">
-                <div className="flex flex-col gap-3 border-r pr-[30px] border-gray-400">
+              <div className="bg-FFFFFF px-3 sm:px-6 py-[30px] rounded flex flex-row flex-wrap gap-[60px] justify-center items-center mt-20 shadow-2xl shadow-[#ffffff15] sm:hover:scale-105 duration-500">
+                <div className="flex flex-col text-center sm:text-start gap-3 border-b sm:border-b-0 sm:border-r pb-[30px] sm:pb-0  sm:pr-[30px] border-gray-400">
                   <p className="text-[#FD6F00] text-[24px]  font-extrabold ">
                     5+
                   </p>
@@ -72,7 +75,7 @@ const SelfPresentation = () => {
                     Experiences
                   </p>
                 </div>
-                <div className="flex flex-col gap-3 pr-[30px] border-r border-gray-400">
+                <div className="flex flex-col text-center sm:text-start gap-3 border-b sm:border-b-0 sm:border-r pb-[30px] sm:pb-0 sm:pr-[30px] border-gray-400">
                   <p className="text-[#FD6F00] text-[24px]  font-extrabold ">
                     20+
                   </p>
@@ -80,7 +83,7 @@ const SelfPresentation = () => {
                     Project done
                   </p>
                 </div>
-                <div className="flex flex-col gap-3 ">
+                <div className="flex flex-col text-center sm:text-start gap-3 border-b border-gray-400 sm:border-b-0 pb-[30px] sm:pb-0 ">
                   <p className="text-[#FD6F00] text-[24px]  font-extrabold ">
                     80+
                   </p>
@@ -90,8 +93,8 @@ const SelfPresentation = () => {
                 </div>
               </div>
             </div>
-            <div className="p-4 border-t-4 border-white border-l-4 border-r-4 border-r-[#fd6f00] border-b-4 border-b-[#fd6f00] hover:scale-105 duration-500 transition-all">
-              <div className="w-[354px] rounded-xl">
+            <div className="mb-[30px] sm:mb-0 p-4 border-t-4 border-white border-l-4 border-r-4 border-r-[#fd6f00] border-b-4 border-b-[#fd6f00] hover:scale-105 duration-500 transition-all">
+              <div className="w-[300px] sm:w-[354px]  rounded-xl">
                 <img
                   src={profile}
                   alt="Profile"

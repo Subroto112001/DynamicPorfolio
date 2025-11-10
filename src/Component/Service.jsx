@@ -48,7 +48,7 @@ const Service = () => {
             <h1 className="font-Syne text-[64px] font-bold text-white text-center">
               SERVICE
             </h1>
-            <p className="text-[20px] text-center font-medium text-707070">
+            <p className="text-[20px] text-center font-medium text-707070 px-3">
               Crafting intuitive, visually appealing, and user-centered digital
               experiences that enhance usability and elevate brand identity.
             </p>

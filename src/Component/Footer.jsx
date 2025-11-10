@@ -44,17 +44,19 @@ const Footer = () => {
           id: 4,
           icon: <FaGithub />,
         },
-      ];
+  ];
+  
+  
   return (
     <div className="bg-[#1B1B1B]">
       <div className="container">
-        <div className="py-[50px]">
+        <div className="py-[50px] px-3 sm:px-0">
           <h3 className="text-[#fd6f00] font-bold text-[30px] text-center">
             LOGO
           </h3>
 
-          <div className="mt-[50px]">
-            <ul className="flex flex-wrap gap-5 sm:gap-[60px] justify-center items-center text-959595">
+          <div className=" mt-5 sm:mt-[50px]">
+            <ul className="flex flex-wrap gap-4 sm:gap-[60px] justify-center items-center text-959595">
               {footerItem.map((item) => (
                 <li
                   key={item.id}

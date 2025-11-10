@@ -4,7 +4,7 @@ export default function Contact() {
     return (
       <div className="bg-[#131212] py-10">
         <section className=" text-white container">
-          <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-3 sm:px-0 ">
             {/* Left Content */}
             <div>
               <h2 className="text-4xl font-bold mb-6">Let's Connect</h2>
