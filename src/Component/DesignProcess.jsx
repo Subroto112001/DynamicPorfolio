@@ -38,7 +38,7 @@ const WorkflowDiagram = () => {
 
   const isMobile = windowWidth < 768;
 
-  const radius = isMobile ? 120 : windowWidth < 1024 ? 180 : 240;
+  const radius = isMobile ? 120 : windowWidth < 1024 ? 180 : 300;
   const svgSize = isMobile ? 400 : windowWidth < 1024 ? 600 : 800;
   const centerX = svgSize / 2;
   const centerY = svgSize / 2;
@@ -75,7 +75,7 @@ const WorkflowDiagram = () => {
         </div>
         <div className="px-4">
           <div className="relative max-w-md mx-auto">
-            <div className="grid grid-cols-3 gap-3">
+           <div className="grid grid-cols-3 gap-4">
               {nodes.map((node, index) => (
                 <div
                   key={index}
@@ -85,14 +85,14 @@ const WorkflowDiagram = () => {
                     gridColumn: node.gridPos.col + 1,
                   }}
                 >
-                  <div className="bg-[#fd6f00] group active:bg-white border border-[#fd6f00] transition-colors duration-300 rounded-lg px-2 py-3 shadow-lg w-full min-h-[80px] flex items-center justify-center">
+                  <div className="bg-[#fd6f00] group active:bg-white border border-[#fd6f00] transition-colors duration-300 rounded-lg px-2 py-3 shadow-lg w-full h-[85px] flex items-center justify-center">
                     <span className="text-white group-active:text-[#fd6f00] transition-all duration-300 font-semibold text-[9px] text-center leading-tight whitespace-pre-line">
                       {node.label}
                     </span>
                   </div>
                 </div>
               ))}
-            </div>
+              </div>
 
             {/* Flow indicators as simple arrows between boxes */}
             <svg
